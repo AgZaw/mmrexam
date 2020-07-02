@@ -1,0 +1,12 @@
+.CityList {
+  text-decoration: none;
+  color: #0288d1;
+}
+.CityList li {
+  display: flex;
+  justify-content: space-between;
+}
+.CityList:hover {
+  text-decoration: none;
+  color: #d50000;
+} 

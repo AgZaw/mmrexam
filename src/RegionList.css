@@ -1,0 +1,13 @@
+.RegionList {
+  text-decoration: none;
+  color: #0288d1;
+}
+
+.RegionList li {
+  display: flex;
+  justify-content: space-between;
+}
+.RegionList:hover {
+  text-decoration: none;
+  color: #d50000;
+}
