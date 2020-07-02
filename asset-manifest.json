@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mmrexam/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/mmrexam/static/js/main.04bfa320.chunk.js",
+    "main.js.map": "/mmrexam/static/js/main.04bfa320.chunk.js.map",
+    "runtime-main.js": "/mmrexam/static/js/runtime-main.9eb18047.js",
+    "runtime-main.js.map": "/mmrexam/static/js/runtime-main.9eb18047.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/mmrexam/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c2ded1c7.chunk.js": "/mmrexam/static/js/2.c2ded1c7.chunk.js",
+    "static/js/2.c2ded1c7.chunk.js.map": "/mmrexam/static/js/2.c2ded1c7.chunk.js.map",
+    "index.html": "/mmrexam/index.html",
+    "precache-manifest.48eb8b9f0b8bbe455bfb4505ebeef819.js": "/mmrexam/precache-manifest.48eb8b9f0b8bbe455bfb4505ebeef819.js",
+    "service-worker.js": "/mmrexam/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/mmrexam/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.27fd15f6.chunk.css.map": "/mmrexam/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.c2ded1c7.chunk.js.LICENSE.txt": "/mmrexam/static/js/2.c2ded1c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9eb18047.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c2ded1c7.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.04bfa320.chunk.js"
+  ]
+}
