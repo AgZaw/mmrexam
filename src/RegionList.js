@@ -11,7 +11,7 @@ class RegionList extends Component {
         {
           regions.map((region, i) => {
             return (
-              <Link className="RegionList" to={`/mmrexam/${year}/region/${region.name}`} key={i}>
+              <Link className="RegionList" to={`/${year}/region/${region.name}`} key={i}>
                 <li className="list-group-item">
                   <div>{region.no}</div>
                   <div>{region.name}</div>

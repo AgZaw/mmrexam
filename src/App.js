@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link, Redirect, NavLink, HashRouter } from 'react-router-dom';
 
 import twok16 from "./data/2016.json";
 import twok17 from "./data/2017.json";
@@ -18,10 +18,10 @@ const results = {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link className="navbar-brand" to="/mmrexam/2019">အောင်စာရင်း</Link>
+          <Link className="navbar-brand" to="/2019">အောင်စာရင်း</Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -37,16 +37,16 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/mmrexam/2019">2019</NavLink>
+                <NavLink className="nav-link" to="/2019">2019</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/mmrexam/2018">2018</NavLink>
+                <NavLink className="nav-link" to="/2018">2018</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/mmrexam/2017">2017</NavLink>
+                <NavLink className="nav-link" to="/2017">2017</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/mmrexam/2016">2016</NavLink>
+                <NavLink className="nav-link" to="/2016">2016</NavLink>
               </li>
             </ul>
           </div>
@@ -56,7 +56,7 @@ function App() {
           <Switch>
             <Route
               exact
-              path="/mmrexam/:eduYear"
+              path="/:eduYear"
               render={props => {
                 const { eduYear } = props.match.params;
                 return (
@@ -70,7 +70,7 @@ function App() {
             />
             <Route
               exact
-              path="/mmrexam/:eduYear/region/:regionName"
+              path="/:eduYear/region/:regionName"
               render={props => {
                 const { regionName, eduYear } = props.match.params;
                 const currentRegion = results[eduYear].years.find(region => {
@@ -90,11 +90,12 @@ function App() {
                 );
               }}
             />
-            <Route exact render={() => <Redirect to="/mmrexam/2019" />} />
+            <Route render={() => <Redirect to="/2019" />} />
+            {/* <Route render={() => <h1>404 not found</h1>} /> */}
           </Switch>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
